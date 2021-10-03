@@ -1,0 +1,10 @@
+steps:
+  - name: node:16.10.0
+    entrypoint: npm
+    args: ["install", "--save-dev"]
+  - name: node:16.10.0
+    entrypoint: npm
+    args: ["audit", "fix"]
+  - name: node:16.10.0
+    entrypoint: npm
+    args: ["test"]
